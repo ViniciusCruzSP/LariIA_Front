@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "LarIA",
+    "slug": "laria-front",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/laria/robot-main.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#C8F3EE"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.com.laria.app"
+    },
+    "android": {
+      "package": "br.com.laria.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#C8F3EE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

@@ -24,7 +24,8 @@ O navegador abrirá a LarIA. Essa opção não exige conta no Expo.
 3. No PowerShell, dentro da pasta do projeto, autentique o terminal com a mesma conta:
 
 ```powershell
-npx.cmd expo login --no-browser
+npx.cmd expo login --no-browser --username (seu username)
+(irá pedir senha após inserir o username)
 npx.cmd expo whoami
 ```
 

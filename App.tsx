@@ -182,7 +182,7 @@ function BotMessage({ children }: { children: React.ReactNode }) {
   return (
     <View style={styles.messageRow}>
       <Image source={botAvatar} style={styles.avatar} />
-      <View style={styles.botBubble}>{typeof children === 'string' ? <Text style={styles.botText}>{children}</Text> : children}</View>
+      <View style={styles.botBubble}>{React.isValidElement(children) ? children : <Text style={styles.botText}>{children}</Text>}</View>
     </View>
   );
 }
@@ -516,5 +516,6 @@ const styles = StyleSheet.create({
   profileLabel: { color: COLORS.muted, fontSize: 12, textTransform: 'uppercase', fontWeight: '800', marginTop: 10 },
   profileValue: { color: COLORS.ink, fontSize: 17, fontWeight: '700' },
 });
+
 
 
